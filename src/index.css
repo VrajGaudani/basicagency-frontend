@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .clientBefore {
+    @apply pt-20 mt-4 text-[22px] font-bold uppercase relative before:w-[20px] before:h-[2px] before:absolute before:top-0 before:left-0 before:bg-bablack-400;
+  }
+
+  .btn_before{
+    @apply inline-block relative items-center border border-bablack-400 group-[.colorChange]:border-bapink-400 group-[.colorChange]:transition-all  py-1.5 px-6 rounded-full uppercase text-xs font-medium overflow-hidden transition-all duration-500 hover:text-bawhite-400 before:z-[-1] before:duration-500 before:transition-all before:translate-y-full before:absolute before:w-full before:h-[calc(100%+0.3rem)] before:left-0 before:bg-bablack-400 before:top-0 hover:before:translate-y-0;
+  }
+
+  .headerLink{
+    @apply block py-2 pr-5 pl-4 relative text-bawhite-400 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 lg:dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700 uppercase font-inter text-sm group-[.scrolled]:text-bablack-400 group-[.scrolled]:after:bg-bablack-400  group-[.colorChange]:text-bapink-400;
+  }
+
+  .nav_link{
+    @apply after:absolute after:w-full after:scale-x-0 after:h-px after:bottom-0 after:left-0 after:bg-bawhite-400 after:origin-bottom-right after:transition-transform after:duration-200 after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left  group-[.colorChange]:after:bg-bapink-400;
+  }
+
+  .bacontainer{
+    @apply px-containerpad lg:px-80px;
+  }
+}
